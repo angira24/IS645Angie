@@ -1,20 +1,20 @@
-const pics = [
-    'imgs/kitty_bed.jpg', // 0
-    'imgs/kitty_basket.jpg', // 1
-    'imgs/kitty_laptop.jpg', // 2
-    'imgs/kitty_door.jpg', //3
-    'imgs/kitty_sink.jpg', // 4
-    'imgs/kitty_wall.jpg', // 5
+var pics = [
+    'imgs/kitty_bed.jpg', 
+    'imgs/kitty_basket.jpg', 
+    'imgs/kitty_laptop.jpg', 
+    'imgs/kitty_door.jpg', 
+    'imgs/kitty_sink.jpg', 
+    'imgs/kitty_wall.jpg', 
   ]
   
-  const button = document.querySelector('button')
-  const img = document.querySelector('img')
+  var btn = document.querySelector('button')
+  var img = document.querySelector('img')
   
-  let showIndex = 0
-  button.addEventListener('click', function() {
-    if (showIndex === 6) {
-      showIndex = 0
+  var Index = 1;
+  btn.addEventListener('click', function() {
+    if (Index === 6) {
+      Index = 0
     }
-    img.src = pics[showIndex]
-    showIndex = showIndex + 1
+    img.src = pics[Index]
+    Index = Index + 1
   })
